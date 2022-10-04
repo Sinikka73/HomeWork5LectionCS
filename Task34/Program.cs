@@ -54,4 +54,4 @@ fillArray(array);
 printArray(array);
 Console.WriteLine();
 int result = countOfEvenNumbers(array);
-Console.Write($"Количество чётных чисел в массиве равно {result}");
+Console.Write($"Количество чётных чисел в массиве: {result}");
