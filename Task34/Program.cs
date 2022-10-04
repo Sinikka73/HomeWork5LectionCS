@@ -28,6 +28,7 @@ void printArray(int[] col)
         position++;
     }
     Console.Write ("]");
+    Console.WriteLine();
 }
 
 int countOfEvenNumbers(int[] incomingArray)
@@ -35,11 +36,11 @@ int countOfEvenNumbers(int[] incomingArray)
     int count = 0;
     for (int i = 0; i < incomingArray.Length; i++)
     {
-        if(incomingArray[i] %2 = 0)
+        int digit = incomingArray[i] %2;
+        if(digit == 0)
         {
             count = count +1;
         }
-
     }
     return count;
 }
@@ -52,3 +53,5 @@ int[] array = new int[userNumber];
 fillArray(array);
 printArray(array);
 Console.WriteLine();
+int result = countOfEvenNumbers(array);
+Console.Write($"Количество чётных чисел в массиве равно {result}");
